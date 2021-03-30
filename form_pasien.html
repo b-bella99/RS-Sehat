@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daftar sebagai Pasien</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="head">
+  <table width="100%" height="20%" border="0" class="table">
+    <tbody>
+      <tr>
+        <td width="51%"><a href="index.html"><img src="img/logo.png" width="429" height="138" alt=""></a></td>
+        <td width="9%"><a href="index.html" class="link">Home</a></td>
+        <td width="10%"><a href="visimisi.html">Visi Misi</a></td>
+		<td width="9%"><a href="layanan.html">Layanan</a></td>
+		<td width="21%"><a href="form_pasien.html">Daftar Sebagai Pasien</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="body1">
+  <form id="form1" name="form1" method="post" action="layanan.html">
+	  <table width="40%" height="100%" border="0" align="center">
+  <tbody>
+    <tr>
+      <td colspan="3" align="center"><h3>Pendaftaran Pasien RS.Sehat</h3></td>
+      </tr>
+    <tr>
+      <td width="46%">NIK</td>
+      <td width="3%">:</td>
+      <td width="51%">
+        <input type="number" name="nik" id="nik"></td>
+    </tr>
+    <tr>
+      <td>Nama Lengkap</td>
+      <td>:</td>
+      <td>
+        <input type="text" name="nama" id="nama"></td>
+    </tr>
+    <tr>
+      <td>Nama Kepala Keluarga</td>
+      <td>:</td>
+      <td>
+        <input type="text" name="nmkk" id="nmkk"></td>
+    </tr>
+    <tr>
+      <td>Jenis Kelamin</td>
+      <td>:</td>
+      <td><p>
+        <label>
+          <input type="radio" name="jk" value="laki-laki" id="jk_0">
+          Laki-laki</label>
+        <br>
+        <label>
+          <input type="radio" name="jk" value="perempuan" id="jk_1">
+          Perempuan</label>
+        <br>
+      </p></td>
+    </tr>
+    <tr>
+      <td>Tanggal Lahir</td>
+      <td>:</td>
+      <td>
+        <input type="date" name="date" id="date"></td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td>:</td>
+      <td>
+        <textarea name="alamat" id="alamat"></textarea></td>
+    </tr>
+    <tr>
+      <td>Kecamatan</td>
+      <td>:</td>
+      <td>
+        <input type="text" name="kcmtn" id="kcmtn"></td>
+    </tr>
+    <tr>
+      <td>Kelurahan</td>
+      <td>:</td>
+      <td><input type="text" name="klrhn" id="klrhn"></td>
+    </tr>
+    <tr>
+      <td>No. Bpjs</td>
+      <td>:</td>
+      <td>
+        <input type="number" name="bpjs" id="bpjs"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="submit" id="submit" value="Submit" size="20" formaction="layanan.html">
+        <input type="reset" name="reset" id="reset" value="Clear" size="20"></td>
+    </tr>
+  </tbody>
+</table>
+  </form>
+</div>
+<footer class="foot">
+&copy;2019  All rights reserved. <a href="index.html">Rumah Sakit Sehat.</a></footer>
+</html>
