@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Rumah Sakit Sehat</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function kunjung(){
+			alert("Selamat Datang di laman resmi Rumah Sakit Sehat!")
+		}
+	</script>
+	
+		<title>Tutorial Google Map</title>
+		
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		
+		<script>
+			function initialize(){
+				var propertiPeta = {
+					center: new google.maps.LatLng(-7.9670996, 112.673741),zoom:9,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+				
+				var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+				
+				//membuat Marker
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(-7.9670996, 112.673741),map: peta
+				});
+			}
+			
+			//event jendela di load
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+</head>
+
+<body onLoad="kunjung()">
+<div class="head">
+  <table width="100%" height="20%" border="0" class="table">
+    <tbody>
+      <tr>
+        <td width="51%"><a href="index.html"><img src="img/logo.png" width="429" height="138" alt=""></a></td>
+        <td width="9%"><a href="index.html" class="a">	Home  </a></td>
+        <td width="10%"><a href="visimisi.html">   Visi Misi   </a></td>
+		<td width="9%"><a href="layanan.html">   Layanan   </a></td>
+		<td width="21%"><a href="form_pasien.html">   Daftar Sebagai Pasien   </a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="body"><table width="100%" height="100%" border="0" class="table">
+  <tbody>
+	  <tr>
+		  <td colspan="3"><img src="img/health.jpg" width="1558" height="700" alt=""/></td>
+	  </tr>
+    <tr>
+      <td width="25%"><img src="img/visimisi.png" width="236" height="146" alt=""/></td>
+      <td width="48%"><img src="img/service.png" width="157" height="141" alt=""/></td>
+      <td width="23%"><img src="img/register.jpg" width="240" height="145" alt=""/></td>
+    </tr>
+	<tr>
+		<td colspan="3" align="center"><hr><h2>Lokasi Rumah Sakit Sehat</h2></td>
+	</tr>
+	<tr>
+	  <td colspan="3" align="center"><div id="googleMap" style="width: 50%;height: 380px;"></div></td>
+	</tr>
+  </tbody>
+</table>
+</div>
+<footer class="foot">
+&copy;2019  All rights reserved. <a href="index.html">Rumah Sakit Sehat.</a></footer>
+</body>
+</html>
